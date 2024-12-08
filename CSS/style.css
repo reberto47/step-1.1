@@ -3,11 +3,20 @@
 }
 
 .container {
+    font-family: var(--font-family);
+    
+}
+
+.custum-sections-size {
     width: 1296px;
     margin: 0 auto;
     box-sizing: border-box;
-    font-family: var(--font-family);
 }
+
+.green-background-section {
+    background-color: #dbf3ed;
+}
+
 
 /* header */
 
@@ -52,6 +61,11 @@
     text-align: center;
     color: #eee;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.green-btn:hover {
+    background: #004942;
 }
 
 
@@ -191,6 +205,12 @@ nav {
     border: 2px solid #0f8277;
     border-radius: 4px;
     background-color: transparent;
+    transition: color border 0.3s ease;
+}
+
+.def-btn:hover {
+    color: #004942;
+    border-color: #004942;
 }
 
 .log-btn {
@@ -251,6 +271,10 @@ nav {
 
 /* academic training */
 
+.academic-training {
+    margin: 80px 0;
+}
+
 .at-titles{
     display: flex;
     flex-direction: column;
@@ -258,14 +282,14 @@ nav {
     margin-bottom: 40px;
 }
 
-.at-titles p {
+.green-title {
     font-weight: 700;
     font-size: 20px;
     line-height: 120%;
     color: #0f8277;
 }
 
-.at-titles h2 {
+.main-title {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 40px;
@@ -273,15 +297,16 @@ nav {
     color: #000;
 }
 
-.at-titles h3 {
+.main-subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
     color: #000;
 }
 
-.at-cards {
-
+.section-cards {
+    display: flex;
+    justify-content: space-between;
 }
 
 .at-card {
@@ -298,45 +323,57 @@ nav {
     overflow: hidden;
 }
 
-.at-card-img {
-
+.at-card-img {   
+   
 }
 
-.at-card-content {
+.card-content {
     margin: 24px 16px;
-
 }
 
-.at-card-title {
+.card-title {
     display: flex;
     align-items: center;
     gap: 12px;
     margin-bottom: 16px;
 }
 
-.at-card-logo1 {
-    background-image: url(../img/at-card-logo1.png);
+.danIT-card-logo1 {
+    background-image: url(../img/danIT-card-logo1.svg);
     height: 20px;
     width: 72px;
 }
 
-.at-card-content h4 {
+.at-card-logo2 {
+    background-image: url(../img/at-card-logo2.svg);
+    width: 19px;
+    height: 20px;
+}
+
+.at-card-logo3 {
+    background-image: url(../img/at-card-logo3.svg);
+    background-position: center;
+    width: 47px;
+    height: 20px;
+}
+
+.card-content h4 {
     font-weight: 500;
     font-size: 16px;
     line-height: 120%;
     color: #000;
-    display: inline-block;
+    text-wrap: nowrap;
     
 }
 
-.at-card-content p {
+.card-content p {
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
     color: #000;
 }
 
-.at-card-sticker {
+.card-sticker {
     display: flex;
     gap: 12px;
     position: absolute;
@@ -344,15 +381,351 @@ nav {
     left: 12px;
 }
 
-.at-card-sticker div {
+.card-sticker div {
     background: url(../img/at-card-sticker.svg);
     height: 20px;
     width: 20px;
 }
 
-.at-card-sticker p {
+.card-sticker p {
     font-weight: 500;
     font-size: 16px;
     line-height: 120%;
     color: #0f8277;
+}
+
+/* courses and specializations */
+
+.cs-titles{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.cs-cards {
+
+}
+
+.cs-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dadada;
+    border-radius: 8px;
+    width: 306px;
+    height: 480px;
+
+    box-sizing: border-box;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.green-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #0f8277;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.green-link:hover {
+    color: #004942;
+}
+
+.section-link {
+    display: block; 
+    text-align: center;
+    margin: 40px auto ;
+}
+
+.section-link::after {
+    content: '';
+    display: inline-block;
+    background-image: url(../img/cs-arrow.svg);
+    background-position: center;
+    height: 16px;
+    width: 16px;
+    margin-left: 18px;
+}
+
+
+/* featured-section */
+
+.bold-subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #000;
+}
+
+.featured-section { 
+    margin: 80px 0;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.categories ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* cooperate */
+
+.cooperate {
+    height: 382px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cooperate h2{
+    display: inline-block;  
+    margin: 80px auto 60px;
+    width: 871px;
+    text-align: center;
+}
+
+.coop-companies {
+    display: flex;
+    justify-content: space-between;
+    height: 66px;
+}
+
+/* business-section */
+
+.business-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+    align-items: center;
+}
+
+.business-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 636px;
+    height: 277px;
+}
+
+.business-content h3 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    color: #000;
+}
+
+.business-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 588px;
+    height: 412px;
+    border-collapse: collapse;
+}
+
+.business-grid-item {
+    padding: 10px;
+    width: 196px;
+    height: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #bababa; /* Рамка між елементами */
+    border-width: 0 1px 1px 0; /* Тільки між елементами */
+    box-sizing: border-box;
+}
+
+.business-grid-item:nth-child(3n) {
+    border-right: none; /* Видалення правої рамки у третьому стовпці */
+}
+
+.business-grid-item:nth-last-child(-n+3) {
+    border-bottom: none; /* Видалення нижньої рамки для останнього рядка */
+}
+
+/* price-section */
+.price-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.price-section h2 {
+    margin-bottom: 40px;
+}
+
+.price-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.price-card {
+    border: 1px solid #0f8277;
+    border-radius: 24px;
+    padding: 56px;
+    width: 416px;
+    height: 698px;
+    background: #fdfdfd;
+}
+
+.price-card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.price-card.highlighted {
+    background: #0f8277;
+    color: #fff;
+}
+
+.price-card-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 304px;
+    height: 286px;
+}
+
+.price-card-titles {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.price-card-description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: inherit;
+    margin-bottom: 24px;
+}
+
+.card-price {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.price-period {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.price-btn {
+    display: inline-block;
+    padding: 10px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.price-btn-primary {
+    background: #0f8277;
+    color: #fff;
+    
+}
+
+.price-btn:hover {
+    background-color: #004942;
+}
+
+.price-btn-secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+
+
+
+.divider {
+    margin: 48px 0;
+    height: 2px;
+    background: #0f8277;
+    flex: 1;
+}
+
+.divider.highlighted {
+    background-color: #fff;
+}
+
+.card-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.card-features li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 16px;
+}
+
+.card-features li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background: url(../img/checkmark-def.svg) no-repeat;
+    background-size: contain;
+}
+
+.price-card.highlighted .card-features li::before {
+    background: url(../img/chechmark-white.svg) no-repeat;
+    background-size: contain;
+}
+
+/* students-section */
+
+.students-section {
+    margin: 80px 0;
+}
+
+.students-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr );
+    column-gap: 24px;
+    row-gap: 23.5px;
+    max-width: max-content;
+}
+
+.student-grid-item {
+    width: 306px;
+    height: 210px;
+    overflow: hidden;
+}
+
+
+
+.student-grid-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.student-grid-item.large {
+    width: 636px;
+    height: 445px;
+
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
 }
