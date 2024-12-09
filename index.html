@@ -6,45 +6,39 @@
     <title>STEP 1</title>
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">    
-        <div class="custum-sections-size"> <!-- не знаю наскільки правильно робити контейнер в контейнері, щоб змінювати фони в деяких секціях -->
+        <!-- Header Section -->
+        <div class="custum-sections-size">
             <header>
                 <div class="header-wrapper">
                     <div class="explore-menu">
                         <a href="#" class="logo">e-Tutoria</a>
-                    <div class="explore">
-                        <button class="green-btn btn-explore">Explore</button>
-                        <div class="explore-dropdown">
-                            <a href="#">Courses</a>
-                            <a href="#">Corporate training</a>
-                            <div class="drop-line"></div>
-                            <span>Goals</span>
-                            <br>
-                            <a href="#">Take a free course</a>
-                            <a href="#">Get a diploma</a>
-                            <a href="#">Get a certificate</a>
-                            <a href="#">Get a new profession</a>
-                            <span>Themes</span>
-                            <br>
-                            <a href="#">Data science</a>
-                            <a href="#">Business</a>
-                            <a href="#">Computer science</a>
-                            <a href="#">Information Technology</a>
+                        <div class="explore">
+                            <button class="green-btn btn-explore">Explore</button>
+                            <div class="explore-dropdown">
+                                <a href="#">Courses</a>
+                                <a href="#">Corporate training</a>
+                                <div class="drop-line"></div>
+                                <span>Goals</span>
+                                <a href="#">Take a free course</a>
+                                <a href="#">Get a diploma</a>
+                                <a href="#">Get a certificate</a>
+                                <a href="#">Get a new profession</a>
+                                <span>Themes</span>
+                                <a href="#">Data science</a>
+                                <a href="#">Business</a>
+                                <a href="#">Computer science</a>
+                                <a href="#">Information Technology</a>
+                            </div>
+                        </div>
+                        <div class="search-container">
+                            <input type="text" class="search-input" placeholder="What do you want to learn?">
+                            <input type="button" value="" class="search-btn">
                         </div>
                     </div>
-                    
-    
-    
-                    <div class="search-container">
-                        <input type="text" class="search-input" placeholder="What do you want to learn?">
-                        <input type="button" value="" class="search-btn">
-                    </div>
-                    </div>
-                    
-    
                     <nav>
                         <div class="nav-menu">
                             <a href="#">Courses</a>
@@ -55,10 +49,12 @@
                             <button class="green-btn">Sign up</button>
                         </div>
                     </nav>
-    
                 </div>
             </header>
-    
+        </div>
+
+        <!-- Hero Section -->
+        <div class="custum-sections-size">
             <section class="hero">
                 <div class="hero-content">
                     <h1 class="hero-title">Learn comfortably</h1>
@@ -72,7 +68,10 @@
                 </div>  
                 <img src="./img/hero-img.png" alt="hero-img">
             </section>
-    
+        </div>
+
+        <!-- Academic Training Section -->
+        <div class="custum-sections-size">
             <section class="academic-training">
                 <a id="start-learning"></a>
                 <div class="at-titles">
@@ -86,7 +85,7 @@
                         <div class="card-content">
                             <div class="card-title">
                                 <div class="danIT-card-logo1"></div>
-                            <h4>DAN.IT Education</h4>
+                                <h4>DAN.IT Education</h4>
                             </div>
                             <p>High-quality Israeli IT education</p>
                         </div>
@@ -94,15 +93,13 @@
                             <div></div>
                             <p>Get a diploma</p>
                         </div>
-                        
                     </a>
-    
                     <a href="#" class="at-card">
                         <img src="./img/AT-card2.png" alt="dan-it" class="at-card-img">
                         <div class="card-content">
                             <div class="card-title">
                                 <div class="at-card-logo2"></div>
-                            <h4>European University</h4>
+                                <h4>European University</h4>
                             </div>
                             <p>121 "Software engineering"</p>
                         </div>
@@ -110,15 +107,13 @@
                             <div></div>
                             <p>Get a diploma</p>
                         </div>
-                        
                     </a>
-    
                     <a href="#" class="at-card">
                         <img src="./img/AT-card2.png" alt="dan-it" class="at-card-img">
                         <div class="card-content">
                             <div class="card-title">
                                 <div class="at-card-logo3"></div>
-                            <h4>Projector — Creative & Tech Online Institute</h4>
+                                <h4>Projector — Creative & Tech Online Institute</h4>
                             </div>
                             <p>Education that is relevant today and valuable tomorrow</p>
                         </div>
@@ -126,11 +121,13 @@
                             <div></div>
                             <p>Get a diploma</p>
                         </div>
-                        
                     </a>
                 </div>
             </section>
-    
+        </div>
+
+        <!-- Other Sections -->
+        <div class="custum-sections-size">
             <section class="course-specialization">
                 <div class="cs-titles">
                     <p class="green-title">Courses and specializations</p>
@@ -199,7 +196,9 @@
     
                 <a href="#" class="green-link section-link">More courses</a>
             </section>
-    
+        </div>
+
+        <div class="custum-sections-size">
             <section class="featured-section">
                 <h2 class="main-title">Featured topics by category</h2>
                 <div class="categories">
@@ -275,6 +274,7 @@
                     </ul>
                 </div>
                 <a href="#" class="green-link section-link">More topics</a>
+
             </section>
         </div>
 
@@ -292,13 +292,11 @@
                         <img src="./img/cooperate_7.png" alt="image-7">   
                         <img src="./img/cooperate_8.png" alt="image-8">     
                     </div>
-
-                </section> 
+                </section>
             </div>
-           
         </div>
-        <div class="custum-sections-size">
 
+        <div class="custum-sections-size">
             <section class="business-section">
                 <div class="business-content">
                     <h2 class="main-title">The ideal solution for your business</h2>
@@ -336,103 +334,96 @@
                         <img src="./img/buisness-section/image-9.png" alt="image-9">
                     </div>
                 </div>
+
             </section>
         </div>
+
         <div class="custum-back-sections green-background-section">
             <div class="custum-sections-size">
-
-                    <section class="price-section">
-                        <h2 class="main-title">Choose a plan that matches your career goals</h2>
-                        <div class="price-cards">
+                <section class="price-section">
+                    <h2 class="main-title">Choose a plan that matches your career goals</h2>
+                    <div class="price-cards">
                     
-                            <div class="price-card">
-                                <div class="price-card-header">
-                                    <div class="price-card-titles">
-                                            <h3 class="price-card-title">One training program</h3>
-                                            <p class="price-card-description">Learn one topic or master a skill and get certified</p>
-                                            <div class="card-price">
-                                                <span class="price">$ 49</span>
-                                                <span class="price-period">/ MO</span>
-                                            </div>
+                        <div class="price-card">
+                            <div class="price-card-header">
+                                <div class="price-card-titles">
+                                    <h3 class="price-card-title">One training program</h3>
+                                    <p class="price-card-description">Learn one topic or master a skill and get certified</p>
+                                    <div class="card-price">
+                                        <span class="price">$ 49</span>
+                                        <span class="price-period">/ MO</span>
                                     </div>
-                                    <div>
-                                        <a href="#" class="price-btn price-btn-primary">Get Started</a>
-                                    </div>
-                                    </div>
-                                    <div class="divider"></div>
-                                    <ul class="card-features">
-                                        <li>
-                                            <p class="price-card-description"> Access all courses in the curriculum</p>
-                                        </li>
-                                        <li>
-                                            <p class="price-card-description">Receive a certificate upon completion</p> 
-                                        </li>
-                                    </ul>
                                 </div>
-                    
-                                <div class="price-card highlighted">
-                                    <div class="price-card-header">
-                                        <div class="price-card-titles">
-                                            <h3 class="price-card-title">e-Tutoria Plus with monthly payment</h3>
-                                            <p class="price-card-description">Take several courses and get a document that confirms your qualifications in a short time</p>
-                                            <div class="card-price">
-                                                <span class="price">$ 79</span>
-                                                <span class="price-period">/ MO</span>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <a href="#" class="price-btn price-btn-secondary">Get Started</a>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="divider highlighted"></div>
-                                    <ul class="card-features">
-                                        <li>
-                                            <p class="price-card-description">Access 700+ courses and specializations from over 50 leading companies and universities</p> 
-                                        </li>
-                                        <li>
-                                            <p class="price-card-description">Get as many certificates as you want</p>
-                                        </li>
-                                        <li>
-                                            <p class="price-card-description">Choose from over 15 professional certification programs from industry leaders like Google, Facebook, and more</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                    
-                                <div class="price-card">
-                                    <div class="price-card-header">
-                                        <div class="price-card-titles">
-                                            <h3 class="price-card-title">e-Tutoria Plus with annual payment</h3>
-                                            <p class="price-card-description">Convenient schedule, savings, and long-term learning goals</p>
-                                            <div class="card-price">
-                                                <span class="price">$ 399</span>
-                                                <span class="price-period">/ Y</span>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <a href="#" class="price-btn price-btn-primary">Get Started</a>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="divider"></div>
-                                    <ul class="card-features">
-                                        <li>
-                                            <p class="price-card-description">Everything included in the monthly billing plan</p>
-                                        </li>
-                                        <li>
-                                            <p class="price-card-description">Save when paying in advance for a year</p>
-                                        </li>
-                                        <li>
-                                            <p class="price-card-description">Learn at your own pace while maintaining work-life balance</p>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <a href="#" class="price-btn price-btn-primary">Get Started</a>
                             </div>
+                            <div class="divider"></div>
+                            <ul class="card-features">
+                                <li>
+                                    <p class="price-card-description">Access all courses in the curriculum</p>
+                                </li>
+                                <li>
+                                    <p class="price-card-description">Receive a certificate upon completion</p>
+                                </li>
+                            </ul>
                         </div>
+                    
+                        <div class="price-card highlighted">
+                            <div class="price-card-header">
+                                <div class="price-card-titles">
+                                    <h3 class="price-card-title">e-Tutoria Plus with monthly payment</h3>
+                                    <p class="price-card-description">Take several courses and get a document that confirms your qualifications in a short time</p>
+                                    <div class="card-price">
+                                        <span class="price">$ 79</span>
+                                        <span class="price-period">/ MO</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="price-btn price-btn-secondary">Get Started</a>
+                            </div>
+                            <div class="divider highlighted"></div>
+                            <ul class="card-features">
+                                <li>
+                                    <p class="price-card-description">Access 700+ courses and specializations from over 50 leading companies and universities</p>
+                                </li>
+                                <li>
+                                    <p class="price-card-description">Get as many certificates as you want</p>
+                                </li>
+                                <li>
+                                    <p class="price-card-description">Choose from over 15 professional certification programs from industry leaders like Google, Facebook, and more</p>
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="price-card">
+                            <div class="price-card-header">
+                                <div class="price-card-titles">
+                                    <h3 class="price-card-title">e-Tutoria Plus with annual payment</h3>
+                                    <p class="price-card-description">Convenient schedule, savings, and long-term learning goals</p>
+                                    <div class="card-price">
+                                        <span class="price">$ 399</span>
+                                        <span class="price-period">/ Y</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="price-btn price-btn-primary">Get Started</a>
+                            </div>
+                            <div class="divider"></div>
+                            <ul class="card-features">
+                                <li>
+                                    <p class="price-card-description">Everything included in the monthly billing plan</p>
+                                </li>
+                                <li>
+                                    <p class="price-card-description">Save when paying in advance for a year</p>
+                                </li>
+                                <li>
+                                    <p class="price-card-description">Learn at your own pace while maintaining work-life balance</p>
+                                </li>
+                            </ul>
+                        </div>
+                    
                     </div>
                 </section>
             </div>
         </div>
+
         <div class="custum-sections-size">
             <section class="students-section">
                 <h2 class="main-title">Photos of our students</h2>
@@ -467,10 +458,60 @@
                 </div>
 
             </section>
-                
-
         </div>
 
+        <div class="custum-back-sections">
+            <section class="contact-section">
+                <form action="#" class="contact-form">
+                    <h2 class="main-title">Contact Us</h2>
+                    <p class="form-text">Have questions? The quickest way to get in touch with us is using the contact information below.</p> 
+                    <label for="name">
+                        <span>Name</span>
+                        <input 
+                        type="text" 
+                        placeholder="Enter your Name"
+                        class="form-input"
+                        id="name">
+                    </label>    
+                    <label for="email">
+                        <span>Email Address</span>
+                        <input 
+                        type="email" 
+                        placeholder="Enter your Email"
+                        class="form-input"
+                        id="email">
+                    </label> 
+                    <label for="message">
+                        <span>Your message</span>
+                        <textarea 
+                        class="form-input message" 
+                        placeholder="Enter your message"
+                        id="message"></textarea>
+                    </label>     
+                    <input 
+                        type="button" 
+                        value="Send"
+                        class="form-btn">
+                </form>
+            </section>
+            <div class="custum-sections-size">
+                <footer>
+                    <div class="left-footer">
+                        <h2 class="logo">e-Tutoria</h2>
+                        <p class="footer-text">e-Tutoria is the global online learning platform that offers anyone, anywhere access to online courses</p>
+                    </div>
+                    <div class="right-footer">
+                        <div class="social-links">
+                            <div class="footer-link inst"><a href="#"></a></div>
+                            <div class="footer-link fb"><a href="#"></a></div>
+                            <div class="footer-link in"><a href="#"></a></div>
+                        </div>
+                        <p class="footer-text">&#169 2023 e-Tutoria Inc. All rights reserved.</p>
+                    </div>
+
+                </footer>
+            </div>
+        </div>
     </div>
 </body>
 </html>
