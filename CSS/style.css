@@ -883,6 +883,7 @@ footer {
     height: 32px;
     width: 32px;
     display: inline-block;
+    cursor: pointer;
 }
 
 .footer-link.inst {
